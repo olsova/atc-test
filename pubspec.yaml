@@ -1,0 +1,9 @@
+name: sample_app
+description: Test pubspec.yaml for ATC
+version: 1.2.3
+
+environment:
+  sdk: ">=2.19.0 <3.0.0"
+
+dependencies:
+  http: ^0.14.0
