@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'com.example'
-versionName '1.2.19'
+versionName '1.2.20'
 
 description = 'Test build.gradle for ATC'
 
