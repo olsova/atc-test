@@ -14,25 +14,31 @@ jobs:
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
 
       - name: Create tag pubspec.yaml
-        uses: olsova/atc@add-action
+        uses: afdesk/atc-action@refactor/remove-app-logic
         with:
           type: 'pubspec.yaml'
           secrets: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create tag pom.xml
-        uses: olsova/atc@add-action
+        uses: afdesk/atc-action@refactor/remove-app-logic
         with:
           type: 'pom.xml'
           secrets: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create tag build.gradle
-        uses: olsova/atc@add-action
+        uses: afdesk/atc-action@refactor/remove-app-logic
         with:
           type: 'build.gradle'
           secrets: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create tag package.json
-        uses: olsova/atc@add-action
+        uses: afdesk/atc-action@refactor/remove-app-logic
         with:
           type: 'package.json'
+          secrets: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create tag plugin.yaml
+        uses: afdesk/atc-action@refactor/remove-app-logic
+        with:
+          type: 'plugin.yaml'
           secrets: ${{ secrets.GITHUB_TOKEN }}

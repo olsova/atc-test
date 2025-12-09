@@ -1,0 +1,21 @@
+name: test-plugin
+version: "0.1.0"
+usage: Test plugin for development
+description: A sample plugin used for testing Trivy plugin functionality.
+
+commands:
+  - name: run
+    usage: Run the test plugin
+    description: Executes the test logic
+    script: ./run.sh
+
+
+env:
+  TEST_PLUGIN_ENV: "true"
+
+options:
+  - name: debug
+    shorthand: d
+    type: bool
+    default: false
+    usage: Enable debug mode
