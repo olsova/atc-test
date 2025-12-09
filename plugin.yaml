@@ -1,5 +1,5 @@
 name: test-plugin
-version: "0.1.0"
+version: "0.2.0"
 usage: Test plugin for development
 description: A sample plugin used for testing Trivy plugin functionality.
 
