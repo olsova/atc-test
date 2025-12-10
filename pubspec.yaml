@@ -1,6 +1,6 @@
 name: sample_app
 description: Test pubspec.yaml for ATC
-version: 1.2.10
+version: 1.2.12
 
 environment:
   sdk: ">=2.19.0 <3.0.0"
